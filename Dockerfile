@@ -1,10 +1,11 @@
-FROM node:10
+FROM node:latest
 
-WORKDIR /usr/src/app
+WORKDIR /d/learn_docker/docker-node-mongo
 
 COPY package*.json ./
 
 RUN npm install
+
 
 COPY . .
 
